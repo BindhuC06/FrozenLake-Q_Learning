@@ -1,5 +1,3 @@
-Python
 NumPy
 Gymnasium
 Matplotlib
-random
