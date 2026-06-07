@@ -46,6 +46,18 @@ Trained across 4 configurations comparing learning rate α and discount factor �
 
 ---
 
+## Why This Approach Doesn't Scale
+
+FrozenLake works with a Q-table because it has only **16 discrete states**. 
+Environments like CartPole have a **continuous observation space** (cart position, 
+cart velocity, pole angle, pole angular velocity) — infinite possible states mean
+an infinite Q-table, which is impossible to store or compute.
+
+This is exactly why **Deep Q-Networks (DQN)** exist — replacing the Q-table with a 
+neural network that approximates Q(s,a) for any continuous state.
+
+---
+
 ## Results
 
 All runs show the same characteristic learning curve — steady climb from 0% to ~97% win rate, stabilizing after ~6,000 episodes.
