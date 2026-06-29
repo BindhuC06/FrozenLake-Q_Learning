@@ -53,8 +53,8 @@ Environments like CartPole have a **continuous observation space** (cart positio
 cart velocity, pole angle, pole angular velocity) — infinite possible states mean
 an infinite Q-table, which is impossible to store or compute.
 
-This is exactly why **Deep Q-Networks (DQN)** exist — replacing the Q-table with a 
-neural network that approximates Q(s,a) for any continuous state.
+Hence **Deep Q-Networks (DQN)** — replacing the Q-table with a 
+neural network that approximates Q(s,a) for a continuous state.
 
 ---
 
